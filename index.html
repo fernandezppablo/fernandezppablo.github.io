@@ -20,22 +20,32 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            font-size: 16px;
+            font-size: 12px; /* Reduced font size */
             color: white;
         }
 
         .footer-logo {
             position: absolute;
-            bottom: 10px;
+            bottom: 20px; /* Moved further down */
             left: 50%;
             transform: translateX(-50%);
             width: auto;
-            height: 16px; /* Same as font-size of header text */
+            height: 12px; /* Same as reduced font size of header text */
+        }
+
+        .footer-text {
+            position: absolute;
+            bottom: 20px; /* Aligned with the logo */
+            left: 55%; /* Adjusted position to be next to the logo */
+            transform: translateX(-50%);
+            font-size: 12px; /* Same as reduced font size of header text */
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="header-text">Lo mejor siempre está Porvenir...</div>
     <img id="logo" src="porve_escudo.jpg" alt="Escudo del Club El Porvenir" class="footer-logo">
+    <div class="footer-text">2026?</div>
 </body>
 </html>
