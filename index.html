@@ -12,10 +12,6 @@
             padding: 0;
         }
 
-        #logo {
-            margin-top: 50px;
-        }
-
         .header-text {
             position: absolute;
             top: 10px;
@@ -24,28 +20,34 @@
             color: white;
         }
 
+        .main-logo {
+            margin-top: 100px; /* Increased space between header text and main logo */
+            width: auto;
+            height: 32px; /* Increased size */
+        }
+
         .footer-logo {
             position: absolute;
             bottom: 20px; /* Moved further down */
             left: 50%;
             transform: translateX(-50%);
             width: auto;
-            height: 12px; /* Same as reduced font size of header text */
+            height: 32px; /* Increased size */
         }
 
         .footer-text {
             position: absolute;
             bottom: 20px; /* Aligned with the logo */
-            left: 55%; /* Adjusted position to be next to the logo */
-            transform: translateX(-50%);
-            font-size: 12px; /* Same as reduced font size of header text */
+            left: calc(50% + 40px); /* Adjusted position to be next to the logo */
+            font-size: 8px; /* Reduced size */
             color: white;
         }
     </style>
 </head>
 <body>
     <div class="header-text">Lo mejor siempre está Porvenir...</div>
-    <img id="logo" src="porve_escudo.jpg" alt="Escudo del Club El Porvenir" class="footer-logo">
+    <img id="main-logo" src="porve_escudo.jpg" alt="Escudo del Club El Porvenir" class="main-logo">
+    <img id="footer-logo" src="porve_escudo.jpg" alt="Escudo del Club El Porvenir" class="footer-logo">
     <div class="footer-text">2026?</div>
 </body>
 </html>
