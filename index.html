@@ -10,7 +10,8 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            height: 5000vh; /* Increase the height to make scrolling longer */
+            height: 500vh; /* Increase the height to 500% of the viewport height */
+            position: relative;
         }
 
         .header-text {
@@ -21,26 +22,32 @@
             color: white;
         }
 
-        .footer-logo {
+        .footer-content {
             position: absolute;
             bottom: 20px; /* Positioned near the bottom */
             left: 50%;
             transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo {
             width: auto;
             height: 32px; /* Increased size */
         }
 
         .footer-text {
-            position: absolute;
-            bottom: 20px; /* Aligned with the logo */
-            left: calc(50% + 40px); /* Adjusted position to be next to the logo */
             font-size: 8px; /* Reduced size */
             color: white;
+            margin-left: 10px; /* Space between logo and text */
         }
     </style>
 </head>
 <body>
     <div class="header-text">Lo mejor siempre está Porvenir...</div>
-    <div class="footer-text">2026?</div>
+    <div class="footer-content">
+        <img id="footer-logo" src="porve_escudo.jpg" alt="Escudo del Club El Porvenir" class="footer-logo">
+        <div class="footer-text">2026?</div>
+    </div>
 </body>
 </html>
