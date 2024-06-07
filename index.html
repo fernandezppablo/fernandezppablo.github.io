@@ -2,8 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club El Porvenir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <style>
         body {
             background-color: black;
@@ -16,10 +15,27 @@
         #logo {
             margin-top: 50px;
         }
+
+        .header-text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .footer-logo {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            height: 16px; /* Same as font-size of header text */
+        }
     </style>
 </head>
 <body>
-    <h1>Club El Porvenir</h1>
-    <img id="logo" src="porve_escudo.jpg" alt="Escudo del Club El Porvenir">
+    <div class="header-text">Lo mejor siempre está Porvenir...</div>
+    <img id="logo" src="porve_escudo.jpg" alt="Escudo del Club El Porvenir" class="footer-logo">
 </body>
 </html>
